@@ -1,0 +1,48 @@
+/* FONTS*/
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+/* FONTS*/
+
+.section {
+  background: #000;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 100px;
+  padding-left: 0;
+  padding-top: 120px;
+
+  .section-right-side {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    .section-right-side-title {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 58px;
+      color: #ffffff;
+    }
+    .section-right-side-description {
+      width: 550px;
+      font-family: 'Open Sans', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 19px;
+      line-height: 28px;
+      color: #ffffff;
+    }
+    .section-right-side-btn {
+      width: 266px;
+      height: 63px;
+      border: 2px solid #ffffff;
+      background: transparent;
+      color: white;
+      font-size: 23px;
+      cursor: pointer;
+    }
+  }
+}
