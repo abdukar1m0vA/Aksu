@@ -1,9 +1,11 @@
 import React from "react";
 import { Reveal } from "react-reveal";
+import Footer from "../../components/Footer/Footer";
 import "./header.scss";
 
 const Header = () => {
   return (
+    <>
     <div className="header">
       <Reveal effect="fadeInUp">
         <div className="textsArea">
@@ -13,6 +15,8 @@ const Header = () => {
         </div>
       </Reveal>
     </div>
+    <Footer/>
+    </>
   );
 };
 

@@ -1,0 +1,183 @@
+@import url('http://fonts.cdnfonts.com/css/gotham');
+
+.aloqaSection {
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 45px;
+    width: 100%;
+    align-items: center;
+
+    .aloqaInfo {
+        color: white;
+        font-family: 'Gotham', sans-serif;
+        font-weight: 500;
+
+        .location {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            p {
+                margin-top: 15px;
+            }
+        }
+
+        .phone {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            p {
+                margin-top: 15px;
+            }
+        }
+
+        .cklock {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            p {
+                margin-top: 15px;
+            }
+        }
+
+    }
+
+    .aloqaMap {
+        iframe {
+            width: 700px;
+            height: 450px;
+        }
+    }
+}
+
+// @media screen and (max-width: 330px) {
+//     .aloqaSection{
+//         background: #000;
+//         display: block;
+//         justify-content: space-between;
+//         padding: 40px 10px;
+//         text-align: center;
+//         width: 100%;
+//         align-items: center;
+//         .aloqaInfo{
+//             color: white;
+//             font-family: 'Gotham', sans-serif;
+//             font-weight: 500;
+//             .location{
+//                 display: block;
+//                 align-items: center;
+//                 gap: 10px;
+//                 p{
+//                     margin-top: 15px;
+//                 }
+//             }
+//             .phone{
+//                 display: block;
+//                 align-items: center;
+//                 gap: 10px;
+//                 p{
+//                     margin-top: 15px;
+//                 }
+//             }
+//             .cklock{
+//                 display: block;
+//                 p{
+//                     margin-top: 15px;
+//                 }
+//             }
+
+//         }
+//         .aloqaMap{
+//             width: 250px;
+//         }
+//     }
+// }
+
+// @media screen and (max-width: 370px) {
+//     .aloqaSection{
+//         background: #000;
+//         display: block;
+//         justify-content: space-between;
+//         place-items: center;
+//         padding: 40px 35px;
+//         width: 100%;
+//         align-items: center;
+//         .aloqaInfo{
+//             color: white;
+//             font-family: 'Gotham', sans-serif;
+//             font-weight: 500;
+//             .location{
+//                 display: block;
+//                 align-items: center;
+//                 gap: 10px;
+//                 p{
+//                     margin-top: 15px;
+//                 }
+//             }
+//             .phone{
+//                 display: block;
+//                 align-items: center;
+//                 gap: 10px;
+//                 p{
+//                     margin-top: 15px;
+//                 }
+//             }
+//             .cklock{
+//                 display: block;
+//                 p{
+//                     margin-top: 15px;
+//                 }
+//             }
+
+//         }
+//         .aloqaMap{
+//             width: 250px;
+//         }
+//     }
+// }
+
+// @media screen and (max-width: 470px) {
+//     .aloqaSection{
+//         background: #000;
+//         display: block;
+//         justify-content: space-between;
+//         padding: 40px  60px;
+//         text-align: center;
+//         width: 100%;
+//         align-items: center;
+//         .aloqaInfo{
+//             color: white;
+//             font-family: 'Gotham', sans-serif;
+//             font-weight: 500;
+//             .location{
+//                 display: block;
+//                 align-items: center;
+//                 gap: 10px;
+//                 p{
+//                     margin-top: 15px;
+//                 }
+//             }
+//             .phone{
+//                 display: block;
+//                 align-items: center;
+//                 gap: 10px;
+//                 p{
+//                     margin-top: 15px;
+//                 }
+//             }
+//             .cklock{
+//                 display: block;
+//                 p{
+//                     margin-top: 15px;
+//                 }
+//             }
+
+//         }
+//         .aloqaMap{
+//             width: 250px;
+//         }
+//     }
+// }

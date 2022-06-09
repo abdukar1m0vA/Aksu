@@ -1,7 +1,7 @@
 @import url('http://fonts.cdnfonts.com/css/gotham');
 
-.header {
-    background: url(../../images/Header-image.png) no-repeat;
+.menu {
+    background: url(../../images/Menu-image.png) no-repeat;
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -10,7 +10,7 @@
     left: 0;
     display: grid;
     place-items: center;
-
+    z-index: 1;
     .textsArea {
         .name {
             text-transform: uppercase;
