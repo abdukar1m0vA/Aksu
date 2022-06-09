@@ -1,12 +1,14 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom"
+import { Route, Routes } from "react-router-dom"
+import Aloqa from "./components/Aloqa/Aloqa";
 import Home from "./pages/Home";
 
 function App() {
   return (
     <div className="App">
       <Routes>
-        <Route element={<Home/>}/>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/aloqa" element={<Aloqa/>}/>
       </Routes>
     </div>
   );

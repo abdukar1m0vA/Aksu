@@ -3,3 +3,18 @@
   padding: 0px;
   box-sizing: border-box;
 }
+
+.fadeInUp{
+  animation: fadeinup 4s ease;
+}
+
+@keyframes fadeinup{
+  from{
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

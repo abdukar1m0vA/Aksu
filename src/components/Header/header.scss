@@ -1,0 +1,48 @@
+@import url("http://fonts.cdnfonts.com/css/gotham");
+
+.header {
+  background: url(../../images/Header-image.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+
+  .textsArea {
+    .name {
+      text-transform: uppercase;
+      color: #fff;
+      font-weight: 400;
+      font-size: 96px;
+      font-family: "Gotham", sans-serif;
+    }
+
+    .halalDesc {
+      color: #fff;
+      text-align: center;
+      font-weight: 400;
+      font-size: 29px;
+    }
+
+    .bandBtn {
+      background: transparent;
+      color: #fff;
+      border: 1px solid #fff;
+      width: 230px;
+      height: 50px;
+      margin: 20px 320px 0px;
+      transition: 0.5s;
+      font-size: 23px;
+    }
+
+    .bandBtn:hover {
+      border: none;
+      background-color: rgba(0, 0, 0, 0.491);
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+        rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    }
+  }
+}
