@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./navbar.scss";
 import logo from "../../images/Aksu-logo.png";
 import { Link, NavLink } from "react-router-dom";
@@ -7,12 +7,25 @@ import { SideBar } from "./SideBar";
 import CloseIcon from "@mui/icons-material/Close";
 
 const Navbar = () => {
+
+  const [fixed, setFixed] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 100) {
+        setFixed(true); //navbar 100 dan keyin fixed boladi
+      } else {
+        setFixed(false);
+      }
+    });
+  });
+
   const [sidebar, setSidebar] = useState(false);
 
   const showSidebar = () => setSidebar(!sidebar);
 
   return (
-    <div className="navbar">
+    <div className={`navbar ${fixed && "fixedNav"}`}>
       <div className="navbar-logo">
         <NavLink to="/" activelink>
           <img src={logo} alt="Navbar logo" />

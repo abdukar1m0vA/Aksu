@@ -1,0 +1,48 @@
+@import url('http://fonts.cdnfonts.com/css/gotham');
+
+.restoranHaqida {
+    width: 100%;
+    padding: 35px 35px;
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+
+    .img {
+        img {
+            width: 550px;
+        }
+    }
+
+    .desc {
+        width: 500px;
+        color: #ffff;
+        font-family: 'Gotham', sans-serif;
+        font-weight: 300;
+
+        h1 {
+            color: #ffff;
+            font-family: 'Gotham', sans-serif;
+            font-weight: 400;
+        }
+        p{
+            word-break: break-all;
+            width: 350px;
+        }
+        button {
+            background: transparent;
+            color: #fff;
+            border: 1px solid #fff;
+            width: 230px;
+            height: 50px;
+            transition: 0.5s;
+            font-weight: 600;
+        }
+
+        button:hover{
+            border: none;
+            background: #909090;
+            color: black;
+            font-weight: 600;
+        }
+    }
+}

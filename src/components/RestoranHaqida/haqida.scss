@@ -1,0 +1,59 @@
+@import url('http://fonts.cdnfonts.com/css/gotham');
+@import "~video-react/styles/scss/video-react";
+
+.haqida{
+    width: 100%;
+    padding: 35px 55px;
+    background: #000;
+    color: #fff;
+    h1{
+        color: #fff;
+        font-family: 'Gotham', sans-serif;
+        font-weight: 300;
+    }
+    .texts{
+        display: flex;
+        justify-content: space-between;
+        .desc{
+            width: 400px;
+            text-align: left;
+        }
+    }
+    .player{
+        width: 1200px;
+        height: 500px;
+        margin: auto;
+    }
+    .video-react-has-started .video-react-control-bar{
+        display: flex;
+        margin-bottom: 78px;
+    }
+    .video-react .video-react-big-play-button {
+        display: none;
+    }
+    .ender{
+        display: flex;
+        justify-content: space-around;
+        .img{
+            img{
+                width: 400px;
+                height: 500px;
+            }
+        }
+        .texts-img{
+            width: 500px;
+            h1{
+                font-family: 'Gotham', sans-serif;
+                font-weight: 400;
+                margin-bottom: 20px;
+            }
+            p{
+                text-align: left;
+            }
+            img{
+                width: 500px;
+                margin-top: 10px;
+            }
+        }
+    }
+}

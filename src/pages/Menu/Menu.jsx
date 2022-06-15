@@ -1,6 +1,7 @@
 import React from "react";
 import { Reveal } from "react-reveal";
 import Footer from "../../components/Footer/Footer";
+import Menular from "../../components/MenuFoods/Menular";
 import Navbar from "../../components/Navbar/Navbar";
 import "./menu.scss"
 
@@ -17,6 +18,7 @@ const Menu = () => {
           </div>
         </Reveal>
       </div>
+      <Menular/>
       <Footer />
     </>
   );

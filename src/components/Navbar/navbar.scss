@@ -5,12 +5,140 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 45px;
-    background-color: transparent;
+    background: linear-gradient(to top, transparent 0%, rgb(0, 0, 0));
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 3;
+    transition: 0.8s;
+
+    .navbar-logo {
+        img {
+            width: 100px;
+            margin-right: 35px;
+            height: 40px;
+        }
+    }
+
+    .links ul {
+        list-style: none;
+        display: flex;
+        gap: 50px;
+        align-items: center;
+        padding-top: 15px;
+
+        li {
+            padding: 10px 0;
+
+            a {
+                display: inline-block;
+                padding-bottom: 0.25rem;
+                /* defines the space between text and underline */
+                position: relative;
+                font-family: 'Gotham', sans-serif;
+                color: white;
+                text-decoration: none;
+
+                &.active {
+                    color: #15cdfc;
+                    border-bottom: 2px solid #fff;
+                }
+            }
+
+            .menuIcon {
+                color: #fff;
+                cursor: pointer;
+                z-index: 2;
+            }
+
+            a::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 0;
+                height: 2px;
+                background-color: rgb(255, 255, 255);
+                transition: width 0.25s ease-out;
+            }
+
+            a:hover::before {
+                width: 100%;
+            }
+        }
+    }
+
+    /** sidebar **/
+    .side-menu {
+        background-color: #fff;
+        width: 300px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        transition: 900ms;
+    }
+
+    .side-menu.active {
+        right: 0;
+        transition: 950ms;
+        --webkit-transition: 950ms;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    }
+
+    .closeIcon {
+        color: #171a20;
+        align-self: end;
+        transition: 0.5s ease;
+    }
+
+    .closeIcon:hover {
+        cursor: pointer;
+    }
+
+    .sideBarLinks {
+        text-decoration: none;
+        width: 190px;
+        cursor: pointer;
+        list-style: none;
+        font-family: 'Godham', sans-serif;
+        font-weight: 600;
+        font-size: 15px;
+        padding: 10px;
+        text-align: start;
+        transition: 0.5s ease;
+        --webkit-transition: 0.5s ease;
+        border-radius: 5px;
+        color: black;
+    }
+
+    .sidebarNav {
+        width: 200px;
+    }
+
+    .sideBarLinks:hover {
+        background-color: #b3b7bd48;
+        border-radius: 10px;
+    }
+
+    /**media**/
+
+    @media screen and (max-width: 950px) {
+        .menuIcon {
+            color: #fff;
+        }
+    }
+}
+
+.fixedNav {
+    opacity: 2;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.8901960784);
+    backdrop-filter: blur(10px);
 
     .navbar-logo {
         img {
@@ -97,7 +225,7 @@
         cursor: pointer;
     }
 
-    .sideBarLinks{
+    .sideBarLinks {
         text-decoration: none;
         width: 190px;
         cursor: pointer;
@@ -120,13 +248,5 @@
     .sideBarLinks:hover {
         background-color: #b3b7bd48;
         border-radius: 10px;
-    }
-
-    /**media**/
-
-    @media screen and (max-width: 950px) {
-        .menuIcon {
-            color: #fff;
-        }
     }
 }

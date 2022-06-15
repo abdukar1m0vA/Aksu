@@ -1,0 +1,29 @@
+@import url('http://fonts.cdnfonts.com/css/gotham');
+
+.buttons {
+    color: white;
+    padding: 10px 55px;
+
+    h1 {
+        font-family: 'Gotham', sans-serif;
+        font-weight: 400;
+        font-size: 48px;
+    }
+
+    button {
+        background: transparent;
+        margin-right: 10px;
+        width: 120px;
+        gap: 10px;
+        height: 40px;
+        border: 2px solid #909090;
+        color: #ffff;
+        font-family: 'Gotham', sans-serif;
+    }
+
+    button:hover {
+        border: 2px solid #909090;
+        background-color: rgba(0, 0, 0, 0.491);
+        box-shadow: rgba(99, 99, 99, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    }
+}

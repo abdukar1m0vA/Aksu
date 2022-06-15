@@ -21,8 +21,8 @@ const AloqaSection = () => {
           <div className="phone">
             <LocalPhoneOutlinedIcon />
             <p>
-              +998 99 801 01 02 <br />
-              +998 99 801 01 02
+             <a href="tel: +998 99 801 01 02"> +998 99 801 01 02</a> <br />
+              <a href="tel: +998 99 801 01 02">+998 99 801 01 02</a>
             </p>
           </div>
           <div className="cklock">

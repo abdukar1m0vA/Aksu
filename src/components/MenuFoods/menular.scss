@@ -1,0 +1,59 @@
+.menular {
+    background: #000;
+    padding: 30px 35px;
+    .section {
+        .box {
+            padding-left: 35px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            .card {
+                width: 250px;
+                height: 250px;
+                border: none;
+                border-radius: 5px;
+
+                display: grid;
+                place-items: center;
+                grid-template-areas: "main";
+
+                overflow: hidden;
+                cursor: pointer;
+                text-decoration: none;
+            }
+
+            .card>* {
+                grid-area: main;
+            }
+
+            .card-img {
+                width: 100%;
+                aspect-ratio: 1 / 1;
+                object-fit: cover;
+
+                transition: transform 400ms, filter 400ms;
+            }
+
+            .card>.card-body {
+                opacity: 0;
+                color: white;
+                font-size: 10px;
+                text-align: center;
+                transition: transform 400ms, filter 400ms;
+                .card-title{
+                    font-size: 19px;
+                }
+            }
+
+            .card:is(:hover, :focus)>.card-img {
+                filter: brightness(0.2);
+                transform: scale(1.1);
+            }
+
+            .card:is(:hover, :focus)>.card-body {
+                text-align: center;
+                transform: scale(1.1);
+                opacity: 1;
+            }
+        }
+    }
+}

@@ -1,19 +1,29 @@
-*{
+* {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
 
-.fadeInUp{
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #15cdfc;
+  border-radius: 10px;
+}
+
+.fadeInUp {
   animation: fadeinup 4s ease;
 }
 
-@keyframes fadeinup{
-  from{
+@keyframes fadeinup {
+  from {
     transform: translateY(40px);
     opacity: 0;
   }
-  to{
+
+  to {
     transform: translateY(0);
     opacity: 1;
   }
